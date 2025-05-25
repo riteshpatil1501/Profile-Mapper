@@ -1,0 +1,102 @@
+/* Light Theme */
+.container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #222;
+  }
+  
+  .heading {
+    margin-bottom: 20px;
+  }
+  
+  .searchInput {
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .cardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .profileCard {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .profileCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profileImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  .profileName {
+    margin-top: 12px;
+  }
+  
+  .profileDescription {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .button {
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .showButton {
+    background-color: #4caf50;
+  }
+  
+  .showButton:hover {
+    background-color: #43a047;
+  }
+  
+  .detailsButton {
+    background-color: #2196f3;
+  }
+  
+  .detailsButton:hover {
+    background-color: #1976d2;
+  }
+  
+  /* Dark Theme */
+  .dark {
+    background-color: #121212;
+    color: #eee;
+  }
+  
+  .dark .profileCard {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+  }
+  
+  .dark .searchInput {
+    background-color: #2c2c2c;
+    color: #fff;
+    border: 1px solid #444;
+  }
+  

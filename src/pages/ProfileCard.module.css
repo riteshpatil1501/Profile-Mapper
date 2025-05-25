@@ -1,0 +1,85 @@
+.container {
+    padding: 20px;
+  }
+  
+  .title {
+    margin-bottom: 16px;
+  }
+  
+  .searchBar {
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .cardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .profileCard {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .profileCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profileImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 0 auto;
+  }
+  
+  .profileName {
+    margin-top: 12px;
+  }
+  
+  .profileDesc {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .cardButton {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+  }
+  
+  .summaryBtn {
+    background-color: #4caf50;
+    color: white;
+    margin-bottom: 8px;
+  }
+  
+  .summaryBtn:hover {
+    background-color: #43a047;
+  }
+  
+  .viewBtn {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  .viewBtn:hover {
+    background-color: #1976d2;
+  }
+  
+  

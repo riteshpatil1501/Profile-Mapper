@@ -1,0 +1,77 @@
+.container {
+    padding: 20px;
+    max-width: 650px;
+    margin: auto;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .imagePreview {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .primaryButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .cancelButton {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .profileList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .profileCard {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  .cardImage {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  .cardInfo {
+    flex-grow: 1;
+  }
+  
+  .cardActions {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .deleteButton {
+    color: red;
+  }
+  
