@@ -1,8 +1,7 @@
 pipeline {
     agent any
     environment {
-        NEW_VERSION  = '1.0'
-        SERVER_CREDENTIALS = credentials('server-credentials')
+        NEW_VERSION = '1.0'
     }
     stages {
         stage('build') {
@@ -14,20 +13,18 @@ pipeline {
         stage('test') {
             steps {
                 echo 'testing the application...'
-                echo "tested with ${SERVER_CREDENTIALS}"
+                // Credentials should not be used directly here unless inside a withCredentials block.
             }
         }
         stage('deploy') {
             steps {
                 echo 'deploying the application...'
-                withCredentials([usernamePassword(credentials:'server-credentials', usernameVariable: USER, passwordVariable: PWD)]) {
-                    echo "deplayed with ${USER} and ${PWD}"
+                withCredentials([usernamePassword(credentialsId: 'server-credentials', usernameVariable: 'USER', passwordVariable: 'PWD')]) {
+                    echo "deployed with ${USER} and ${PWD}"
                 }
             }
         }
     }
 }
 
-credentials plugin
-credentials binding plugin
 
