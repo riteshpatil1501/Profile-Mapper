@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     parameters {
-        string(name: 'GREETING_NAME', defaultValue: 'MainUser', description: 'Name to greet from main branch')
+        string(name: 'GREETING_NAME', defaultValue: 'MainUser', description: 'Ritesh Patil')
     }
 
     stages {
