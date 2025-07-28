@@ -1,30 +1,18 @@
 pipeline {
     agent any
-    environment {
-        BRANCH_NAME = 'branch_name'
+
+    parameters {
+        string(name: 'GREETING_NAME', defaultValue: 'BranchUser', description: 'Name to greet from branchname')
     }
+
     stages {
-        stage('build') {
-            when {
-                expression {
-                    BRANCH_NAME != 'branch_name'   // Skip build stage for branch_name branch
-                }
-            }
+        stage('Greet from Branch') {
             steps {
-                echo 'building the application...'
-            }
-        }
-        stage('test') {
-            steps {
-                echo 'testing the application...'
-            }
-        }
-        stage('deploy') {
-            steps {
-                echo 'deploying the application...'
+                echo "Hello from BRANCHNAME branch, ${params.GREETING_NAME}!"
             }
         }
     }
 }
+
 
 
